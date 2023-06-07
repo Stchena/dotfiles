@@ -115,6 +115,7 @@ alias mkdir='mkdir --verbose --parents'
 alias mv='mv -vi'
 alias rm='rm -vI'
 alias gdh='noglob git diff HEAD^'
+alias gbDmerged='git branch --merged | grep -v 'master' | xargs git branch -d'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
